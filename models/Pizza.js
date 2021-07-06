@@ -8,7 +8,7 @@ createdBy:{
     type: String
 },
 createdAt: {
-    type: date, 
+    type: Date, 
     default: Date.now
 },
 size: {

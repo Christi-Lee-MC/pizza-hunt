@@ -5,8 +5,8 @@ const {
     getPizzaById, 
     createPizza, 
     updatePizza, 
-    deletePizza,
-    getPizzaById
+    deletePizza
+    
 } = require('../../controllers/pizza-controller');
 const { update } = require('../../models/Pizza');
 
