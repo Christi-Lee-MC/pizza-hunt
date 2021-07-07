@@ -17,7 +17,11 @@ function getPizza(){
   // get pizzaInfo
   fetch(`/api/pizzas/${pizzaId}`)
   .then(response => {
-    console.log(response);
+    // check for a 4xx or 5xx error from server
+    if (!response.ok) {
+      throw new Error({ message: 'Something went wrong!' });
+    }
+
     return response.json();
   })
   .then(printPizza);
