@@ -5,16 +5,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest --verbose test/*",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "insomnia": "0.0.1",
-    "mongodb": "^3.6.10",
-    "mongoose": "^5.13.2"
+    "mongoose": "^5.9.7"
   }
 }

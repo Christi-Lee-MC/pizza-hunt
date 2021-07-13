@@ -1,14 +1,11 @@
 const router = require('express').Router();
-
 const {
-    getAllPizza, 
-    getPizzaById, 
-    createPizza, 
-    updatePizza, 
-    deletePizza
-    
+  getAllPizza,
+  getPizzaById,
+  createPizza,
+  updatePizza,
+  deletePizza
 } = require('../../controllers/pizza-controller');
-const { update } = require('../../models/Pizza');
 
 // /api/pizzas
 router
