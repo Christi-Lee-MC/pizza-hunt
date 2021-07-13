@@ -5,7 +5,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "jest --verbose test/*",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
