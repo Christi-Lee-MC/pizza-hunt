@@ -28,7 +28,7 @@ request.onsuccess = function(event) {
     if (navigator.onLine) {
       // we haven't created this yet, 
     //   but we will soon, so let's comment it out for now
-      // uploadPizza();
+      uploadPizza();
     }
   };
 
@@ -95,4 +95,8 @@ getAll.onsuccess = function() {
     // log error here
     console.log(event.target.errorCode);
   };
+
+  // listen for app coming back online
+window.addEventListener('online', uploadPizza);
+
 };
